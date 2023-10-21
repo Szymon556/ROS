@@ -1,0 +1,6 @@
+<launch>
+  <node name="virtual_dc_motor" pkg="virtual_dc_motor" type="virtual_dc_motor" output="log" respawn="true"></node>
+  <!-- You can add your nodes here to launch them! :) -->
+  <node name="rpm_counter" pkg="virtual_dc_motor" output="log" type="rpm_counter.py" respawn="true"></node>
+  <node name="velocity_controller" pkg="virtual_dc_motor" output="screen" type="velocity_controller.py" respawn="true"></node>
+</launch>
