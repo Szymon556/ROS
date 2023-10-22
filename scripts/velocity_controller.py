@@ -57,7 +57,7 @@ class velocity_controll:
             
             self.pub_cs.publish(self.prev_cs)
 
-        rospy.loginfo(f"self.cs = {self.cs} self.actual_rpm = {self.actual_rpm} self.goal_rpm = {self.goal_rpm} self.actual_rpm.data {data.data}")
+        #rospy.loginfo(f"self.cs = {self.cs} self.actual_rpm = {self.actual_rpm} self.goal_rpm = {self.goal_rpm} self.actual_rpm.data {data.data}")
         
     def get_goal_rpm(self,data):    #pobierz docelowa predkosc
        
